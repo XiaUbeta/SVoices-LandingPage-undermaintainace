@@ -43,10 +43,10 @@ export default function Media() {
               We&apos;re working on it.
             </h1>
             <p className="text-lg text-gray-400">
-              Our team is developing the next generation of voice technology.
+              Our team is preparing.
             </p>
             <p className="text-sm text-gray-500 mt-2">
-              Stay tuned for updates.
+              Maybe you can have a look at our social media.
             </p>
           </div>
 
