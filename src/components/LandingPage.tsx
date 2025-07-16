@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Play, Pause, Volume2, VolumeX, ChevronDown } from "lucide-react"
+import Media from "@/components/Media"
 
 export default function LandingPage() {
   const [isPlaying, setIsPlaying] = useState(true)
@@ -168,6 +169,9 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
+
+      <Media />
     </div>
+
   )
-} 
+}
