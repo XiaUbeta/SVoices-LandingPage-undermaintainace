@@ -123,7 +123,7 @@ export default function LandingPage() {
           <Button
             variant="ghost"
             size="icon"
-            className="animate-pulse-slow text-white/70 hover:text-white"
+            className="animate-pulse-slow text-white/70 hover:bg-white hover:text-black transition-all duration-300"
             onClick={scrollToContent}
           >
             <ChevronDown className="h-6 w-6" />
