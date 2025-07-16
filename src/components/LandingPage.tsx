@@ -77,18 +77,17 @@ export default function LandingPage() {
             <p className="text-xl md:text-2xl mb-12 text-gray-400 max-w-2xl mx-auto leading-relaxed">
               Experience the future of voice technology where human expression meets artificial intelligence
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                size="lg" 
-                className="bg-white text-black hover:bg-gray-200 transition-all duration-300 transform hover:scale-105"
+              <Button
+                size="lg"
+                className="border border-white bg-transparent text-white hover:bg-white hover:text-black transition-all duration-300"
               >
                 Get Started
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
                 size="lg"
-                className="border-white text-white hover:bg-white hover:text-black transition-all duration-300"
+                className="border border-white bg-transparent text-white hover:bg-white hover:text-black transition-all duration-300"
               >
                 Learn More
               </Button>
