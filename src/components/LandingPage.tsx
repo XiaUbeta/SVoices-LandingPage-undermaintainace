@@ -3,7 +3,8 @@
 import React, { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Play, Pause, Volume2, VolumeX, ChevronDown } from "lucide-react"
-import Media from "@/components/Media"
+import NavBar from "@/components/NavBar"
+import SocialMedia from "@/components/SocialMedia"
 
 export default function LandingPage() {
   const [isPlaying, setIsPlaying] = useState(true)
@@ -11,7 +12,6 @@ export default function LandingPage() {
   const [showContent, setShowContent] = useState(false)
 
   useEffect(() => {
-    // Trigger content animation after a short delay
     const timer = setTimeout(() => {
       setShowContent(true)
     }, 500)
@@ -47,9 +47,11 @@ export default function LandingPage() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden">
+    <div className="bg-black text-white overflow-hidden">
+      <NavBar />
+
       {/* Hero Section with Video */}
-      <div className="relative h-screen flex items-center justify-center">
+      <div id="home" className="relative h-screen flex items-center justify-center pt-16">
         {/* Background Video */}
         <video
           id="hero-video"
@@ -129,7 +131,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <Media />
+      <SocialMedia />
 
       {/* Content Section */}
       <div id="content-section" className="min-h-screen bg-gradient-to-b from-black to-gray-900 py-20">
@@ -144,19 +146,19 @@ export default function LandingPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-800/50 p-8 rounded-lg backdrop-blur-sm border border-gray-700/50">
+            <div className="bg-gray-800/50 p-8 rounded-lg backdrop-blur-sm border border-gray-700/50 transition-all duration-500 hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4 text-white">Advanced AI</h3>
               <p className="text-gray-400">
                 Cutting-edge artificial intelligence that understands context, emotion, and nuance in human speech.
               </p>
             </div>
-            <div className="bg-gray-800/50 p-8 rounded-lg backdrop-blur-sm border border-gray-700/50">
+            <div className="bg-gray-800/50 p-8 rounded-lg backdrop-blur-sm border border-gray-700/50 transition-all duration-500 hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4 text-white">Natural Voices</h3>
               <p className="text-gray-400">
                 Synthesized voices that are indistinguishable from human speech, with perfect intonation and expression.
               </p>
             </div>
-            <div className="bg-gray-800/50 p-8 rounded-lg backdrop-blur-sm border border-gray-700/50">
+            <div className="bg-gray-800/50 p-8 rounded-lg backdrop-blur-sm border border-gray-700/50 transition-all duration-500 hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4 text-white">Real-time Processing</h3>
               <p className="text-gray-400">
                 Lightning-fast processing that enables seamless, real-time voice interactions and responses.
@@ -172,6 +174,5 @@ export default function LandingPage() {
         </div>
       </div>
     </div>
-
   )
 }
