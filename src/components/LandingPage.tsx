@@ -71,7 +71,7 @@ export default function LandingPage() {
         {/* Content Overlay */}
         <div className="relative z-20 text-center max-w-4xl mx-auto px-6">
           <div className={`transition-all duration-1000 ${showContent ? "animate-fade-in-up opacity-100" : "opacity-0"}`}>
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text">
               Singularity
             </h1>
             <h2 className="text-4xl md:text-6xl font-light mb-8 text-gray-300">
