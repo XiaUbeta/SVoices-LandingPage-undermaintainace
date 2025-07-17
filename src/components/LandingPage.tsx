@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Play, Pause, Volume2, VolumeX, ChevronDown } from "lucide-react"
 import NavBar from "@/components/NavBar"
 import SocialMedia from "@/components/SocialMedia"
+import AboutUs from "@/components/AboutUs"
 
 export default function LandingPage() {
   const [isPlaying, setIsPlaying] = useState(true)
@@ -137,6 +138,7 @@ export default function LandingPage() {
       </div>
 
       <SocialMedia />
+      <AboutUs />
 
       {/* Content Section */}
       <div id="content-section" className="min-h-screen bg-gradient-to-b from-black to-gray-900 py-20">
