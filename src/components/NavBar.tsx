@@ -3,6 +3,14 @@
 import React from "react"
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu";
+import Link from "next/link";
 
 export default function NavBar() {
   return (
@@ -33,11 +41,59 @@ export default function NavBar() {
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
-          <Button variant="ghost" size="icon" className="text-white">
-            <Menu className="h-6 w-6" />
-          </Button>
+
+         <MobileNav />
+
         </div>
       </div>
     </nav>
+  )
+}
+
+export function MobileNav() {
+  return (
+      <DropdownMenu>
+        {/*
+          移动端导航栏按钮
+          TODO: 使按钮处于active状态时不要向右移动（原因：显示下拉菜单时右边边距不够了）
+         */}
+        <DropdownMenuTrigger asChild>
+          <Button variant="ghost" size="icon" className="text-white">
+            <Menu className="h-6 w-6" />
+          </Button>
+        </DropdownMenuTrigger>
+
+        <DropdownMenuContent align="end">
+
+          {/* 导航内容组 */}
+          <DropdownMenuGroup>
+            <Link href="#home">
+              <DropdownMenuItem className="cursor-pointer">
+                Home
+              </DropdownMenuItem>
+            </Link>
+
+            <Link href="#features">
+              <DropdownMenuItem className="cursor-pointer">
+                Features
+              </DropdownMenuItem>
+            </Link>
+
+            <Link href="#about">
+              <DropdownMenuItem className="cursor-pointer">
+                About
+              </DropdownMenuItem>
+            </Link>
+
+            <Link href="#contact">
+              <DropdownMenuItem className="cursor-pointer">
+                Contact
+              </DropdownMenuItem>
+            </Link>
+
+          </DropdownMenuGroup>
+
+        </DropdownMenuContent>
+      </DropdownMenu>
   )
 }
