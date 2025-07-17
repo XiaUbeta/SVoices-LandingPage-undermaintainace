@@ -71,12 +71,17 @@ export default function LandingPage() {
         {/* Content Overlay */}
         <div className="relative z-20 text-center max-w-4xl mx-auto px-6">
           <div className={`transition-all duration-1000 ${showContent ? "animate-fade-in-up opacity-100" : "opacity-0"}`}>
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text">
+            {/* <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text SingularityVoices">
               Singularity
             </h1>
-            <h2 className="text-4xl md:text-6xl font-light mb-8 text-gray-300">
+            <h2 className="text-4xl md:text-6xl font-light mb-8 text-gray-300 SingularityVoices">
               Voices
-            </h2>
+            </h2> */}
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text SingularityVoices">
+              SINGULARITY VOICES
+            </h1>
+            {/* <div className="SingularityVoices">SINGULARITY VOICES</div> */}
+
             <p className="text-xl md:text-2xl mb-12 text-gray-400 max-w-2xl mx-auto leading-relaxed">
               Experience the future of voice technology where human expression meets artificial intelligence
             </p>
