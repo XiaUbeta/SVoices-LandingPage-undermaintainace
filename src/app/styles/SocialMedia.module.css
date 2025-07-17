@@ -1,0 +1,67 @@
+.icon {
+  	position: absolute;
+  	top: 90px;
+  	left: 3px;
+  	width: 1920px;
+  	height: 1046px;
+  	overflow: hidden;
+  	object-fit: cover;
+}
+.intersectIcon {
+  	width: 32.6px;
+  	position: relative;
+  	height: 31.6px;
+}
+.SingularityVoicesIcon {
+  	width: 174px;
+  	position: relative;
+  	height: 21px;
+}
+.logo {
+  	position: absolute;
+  	top: 505px;
+  	left: 107px;
+  	width: 221.6px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: space-between;
+  	gap: 0px;
+}
+.wereWorkingOn {
+  	position: absolute;
+  	top: 560px;
+  	left: 107px;
+  	line-height: 110%;
+  	font-weight: 300;
+}
+.p {
+  	margin: 0;
+}
+.div {
+  	position: absolute;
+  	top: 634px;
+  	left: 108px;
+  	font-size: 20px;
+  	color: rgba(255, 255, 255, 0.5);
+}
+.rednoteIcon {
+  	position: absolute;
+  	top: 722px;
+  	left: 107px;
+  	width: 30px;
+  	height: 30px;
+  	overflow: hidden;
+  	object-fit: cover;
+}
+.web {
+  	width: 100%;
+  	position: relative;
+  	background-color: #000;
+  	height: 1185px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 64px;
+  	color: rgba(255, 255, 255, 0.97);
+}
+

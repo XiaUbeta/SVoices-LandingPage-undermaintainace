@@ -1,70 +1,22 @@
-"use client"
+import { FunctionComponent } from 'react';
+import styles from '../app/styles/SocialMedia.module.css';
 
-import React from "react"
 
-export default function SocialMedia() {
+const SocialMedia: FunctionComponent = () => {
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center relative overflow-hidden">
-      <svg
-        className="absolute inset-0 w-full h-full opacity-50"
-        viewBox="0 0 1200 600"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M0,300 Q100,200 200,300 Q300,400 400,300 Q500,200 600,300 Q700,400 800,300 Q900,200 1000,300 Q1100,400 1200,300"
-          stroke="white"
-          strokeWidth="2"
-          fill="none"
-          className="animate-wave"
-        />
-        <path
-          d="M0,300 Q100,250 200,300 Q300,350 400,300 Q500,250 600,300 Q700,350 800,300 Q900,250 1000,300 Q1100,350 1200,300"
-          stroke="white"
-          strokeWidth="1.5"
-          fill="none"
-          className="animate-wave delay-100"
-        />
-        <path
-          d="M0,300 Q100,280 200,300 Q300,320 400,300 Q500,280 600,300 Q700,320 800,300 Q900,280 1000,300 Q1100,320 1200,300"
-          stroke="white"
-          strokeWidth="1"
-          fill="none"
-          className="animate-wave delay-200"
-        />
-      </svg>
-
-      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 text-left px-6 md:px-12 w-full md:w-1/3">
-        <h2 className="text-2xl font-bold mb-2">
-          Singularity Voices
-        </h2>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          We&apos;re working on it.
-        </h1>
-        <p className="text-lg text-gray-400">
-          Our team is preparing.
-        </p>
-        <p className="text-sm text-gray-500 mt-2">
-           Maybe you can have a look at our social media.
-        </p>
+    <div className={styles.web}>
+      <img className={styles.icon} alt="" src="/SocialMedia/Background.svg" />
+      <div className={styles.logo}>
+        <img className={styles.intersectIcon} alt="" src="/SocialMedia/Intersect.svg" />
+        <img className={styles.singularityVoicesIcon} alt="" src="/SocialMedia/Singularity Voices.svg" />
       </div>
+      <div className={styles.wereWorkingOn}>We're working on it.</div>
+      <div className={styles.div}>
+        <p className={styles.p}>We're preparing</p>
+        <p className={styles.p}>Maybe you can have a look in our Social Media...?</p>
+      </div>
+      <a href="https://www.xiaohongshu.com/user/profile/66647ed40000000007005670?xsec_token=YBQ8ULi8ZMhpGAcYzVN2DVlnYvzcMbqncDYScfVyAGi2Q=&xsec_source=app_share&xhsshare=CopyLink&appuid=6831e797000000000d008ca1&apptime=1752755206&share_id=8b1b4a719bec4b5c91dd6910fae0de8d"><img className={styles.rednoteIcon} alt="" src="/SocialMedia/Rednote.svg" /></a>
+    </div>);
+};
 
-      <style jsx>{`
-        @keyframes wave {
-          0% { transform: translateY(0); }
-          50% { transform: translateY(5px); }
-          100% { transform: translateY(0); }
-        }
-        .animate-wave {
-          animation: wave 3s infinite ease-in-out;
-        }
-        .delay-100 {
-          animation-delay: 0.1s;
-        }
-        .delay-200 {
-          animation-delay: 0.2s;
-        }
-      `}</style>
-    </div>
-  )
-}
-
+export default SocialMedia;
