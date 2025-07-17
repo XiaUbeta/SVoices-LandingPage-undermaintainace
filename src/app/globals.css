@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+
+body {
+  margin: 0;
+  line-height: normal;
+}
 
 @layer base {
   :root {
@@ -52,6 +58,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -59,9 +66,12 @@
 }
 
 @keyframes pulse-slow {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.8;
   }
@@ -73,4 +83,20 @@
 
 .animate-pulse-slow {
   animation: pulse-slow 3s ease-in-out infinite;
-} 
+}
+
+.SingularityVoices {
+  width: 697px;
+  position: relative;
+  font-size: 70px;
+  letter-spacing: -0.05em;
+  line-height: 100%;
+  font-weight: 100;
+  color: #dcdcdc;
+  text-align: center;
+  display: inline-block;
+}
+
+div{
+  font-family: 'JetBrains Mono';
+}
