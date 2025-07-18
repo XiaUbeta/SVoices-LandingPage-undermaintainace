@@ -31,7 +31,7 @@ const LandingPage: FunctionComponent = () => {
           <p className="p">我们正在准备中</p>
           <p className="p">或许你可以看看我们的社交媒体...?</p>
         </div>
-        <a href="https://www.xiaohongshu.com/user/profile/66647ed40000000007005670?xsec_token=YBQ8ULi8ZMhpGAcYzVN2DVlnYvzcMbqncDYScfVyAGi2Q=&xsec_source=app_share&xhsshare=CopyLink&appuid=6831e797000000000d008ca1&apptime=1752755206&share_id=8b1b4a719bec4b5c91dd6910fae0de8d" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.xiaohongshu.com/user/profile/68762bca000000001d0153a1?xsec_token=YBWIOs9mr8dbyhjgqYwOuYkwxHo95mExL9Ngsge9xuNs8=&xsec_source=app_share&xhsshare=WeixinSession&appuid=68762bca000000001d0153a1&apptime=1752669739&share_id=bc1211778f8746a3b52d5759e108ce5c" target="_blank" rel="noopener noreferrer">
           <img className="rednoteIcon" alt="Rednote" src="Rednote.svg" />
         </a>
       </div>
